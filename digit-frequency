@@ -1,0 +1,19 @@
+int count,strlen(s);
+char s[1000];
+scanf("%s",s)
+
+ for(int i=0; i<10; i++)
+ {
+   count =0;
+   for(int j=0; j<strlen(s); j++)
+   {
+     if(s[j] == comp[i])
+     {
+       count++;
+     }
+   }
+ 
+ prinf("%d",count);
+ 
+ }
+ return(0);
