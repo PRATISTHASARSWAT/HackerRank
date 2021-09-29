@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+int n,count;
+float avg,d,sum=0;
+float list[100];
+
+printf("\n how many number will be averaged ? ");
+scanf("%d",&n);
+
+for(count=0;count<n;count = count +1)
+{
+
+ scanf("%f",& list[count]);
+ sum+= list[count];
+ }
+avg = sum/n;
+printf("\n the average is %.2f",avg);
+ for(count=0;count<n;count=count+1)
+ {
+  d= list[count]-avg;
+  printf("\ncount=%d x=%.2f d=%.2f",count+1,list[count], d);
+  }
+  return(0);
+  }
